@@ -163,8 +163,17 @@ async function callSetTemperature(sensors, temperature){
           },
           method: 'POST',
           body: JSON.stringify(data)
-        }).catch((err) => {console.log('ERROR:', err.message)});        
-        if(response) return await response.json();
+        }).catch((err) => {console.log('ERROR:', err.message)});
+        let ret = {}
+        if(response) {
+          //return await response.json();
+          try {
+            ret = await response.json();
+          } catch(err) {
+            ret = {}
+          }          
+        }
+        return ret
       })
     );
     console.log(returnPool);
