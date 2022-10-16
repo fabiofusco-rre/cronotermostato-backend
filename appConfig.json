@@ -1095,5 +1095,5 @@
         "temperature.sen3"
     ],
     "isLoading": false,
-    "isSaving": true
+    "isSaving": false
 }
