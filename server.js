@@ -163,8 +163,8 @@ async function callSetTemperature(sensors, temperature){
           },
           method: 'POST',
           body: JSON.stringify(data)
-        });
-        return await response.json();
+        }).catch((err) => {console.log('ERROR:', err.message)});        
+        if(response) return await response.json();
       })
     );
     console.log(returnPool);
@@ -177,6 +177,8 @@ function processData(data) {
   // - read temperature
   //Foreach sensors:
   // - Set temperature  
+
+  //console.log(data.zones)
 
   const daysOfWeek = {
     0: 'dom',
@@ -193,6 +195,7 @@ function processData(data) {
   const h = ''+now.getHours() 
   const m = now.getMinutes() > 29 ? '30' : '00'
   const hhmm = (h.length === 1 ? '0' : '') + h + ':' + m
+  console.log('Current time:', now)
   console.log('Current time:', hhmm)
 
   let sensors = []
@@ -208,7 +211,7 @@ function processData(data) {
 }
 
 var CronJob = require('cron').CronJob;
-var job = new CronJob('0 */30 * * * *', function() {
+var job = new CronJob('* */30 * * * *', function() {
     console.log('Here I am, each 30 minutes!')
 
     fs.readFile( __dirname + "/" + "appConfig.json", 'utf8', function (err, data) {
@@ -217,9 +220,10 @@ var job = new CronJob('0 */30 * * * *', function() {
         console.log(err)
       } else{
         console.log('Conf ok!')
+        //console.log(data)
       }
       //console.log( data );
-      processData( data );
+      processData( JSON.parse(data) );
     });
 
     
