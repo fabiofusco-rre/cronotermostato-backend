@@ -1,0 +1,2728 @@
+{
+  "deviceRegistry": {
+    "975af7e3a54154411ddc8887d1ac8658": {
+      "idDevice": "975af7e3a54154411ddc8887d1ac8658",
+      "platform": "shelly",
+      "name": "Valvola termostatica",
+      "isAvailable": true,
+      "stateInfo": {
+        "climate": "heat",
+        "temperature": 18,
+        "currentTemperature": 23.4,
+        "batteryLevel": "100",
+        "valeInfo": "0.0"
+      },
+      "entityControl": {
+        "temperature": "climate.testina_termostatica",
+        "valve": "number.testina_termostatica_valve_position"
+      }
+    }
+  },
+  "zone": {
+    "demo": {
+      "idZone": "demo",
+      "zoneName": "demo",
+      "workMode": {
+        "exit": 16,
+        "eco": 29,
+        "comfort": 9
+      },
+      "weeklyProgramming": {
+        "lun": {
+          "idDay": "lun",
+          "dayName": "Lunedì",
+          "dayShortName": "Lun",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 1,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 2,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 3,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 4,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 5,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 6,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 7,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 8,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 9,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 10,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 11,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 12,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 13,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 14,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 15,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 16,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 17,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 18,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 19,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 20,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 21,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 22,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 23,
+              "workMode": "comfort",
+              "setPoint": 9
+            }
+          ]
+        },
+        "mar": {
+          "idDay": "mar",
+          "dayName": "Martedì",
+          "dayShortName": "Mar",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 12,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 13,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 14,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 15,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 16,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 17,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 16
+            }
+          ]
+        },
+        "mer": {
+          "idDay": "mer",
+          "dayName": "Mercoledì",
+          "dayShortName": "Mer",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 4,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 5,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 6,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 7,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 8,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 9,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 10,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 11,
+              "workMode": "comfort",
+              "setPoint": 9
+            },
+            {
+              "hour": 12,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 13,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 14,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 15,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 16,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 17,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 18,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 19,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 20,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 21,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 22,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 23,
+              "workMode": "eco",
+              "setPoint": 29
+            }
+          ]
+        },
+        "gio": {
+          "idDay": "gio",
+          "dayName": "Giovedì",
+          "dayShortName": "Gio",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 16
+            }
+          ]
+        },
+        "ven": {
+          "idDay": "ven",
+          "dayName": "Venerdì",
+          "dayShortName": "Ven",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 18,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 19,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 20,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 21,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 22,
+              "workMode": "eco",
+              "setPoint": 29
+            },
+            {
+              "hour": 23,
+              "workMode": "eco",
+              "setPoint": 29
+            }
+          ]
+        },
+        "sab": {
+          "idDay": "sab",
+          "dayName": "Sabato",
+          "dayShortName": "Sab",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 16
+            }
+          ]
+        },
+        "dom": {
+          "idDay": "dom",
+          "dayName": "Domentica",
+          "dayShortName": "Dom",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 16
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 16
+            }
+          ]
+        }
+      },
+      "devicesAssigned": [
+        "975af7e3a54154411ddc8887d1ac8658"
+      ]
+    },
+    "abaco": {
+      "idZone": "abaco",
+      "zoneName": "ABACO",
+      "workMode": {
+        "exit": 6,
+        "eco": 18,
+        "comfort": 24
+      },
+      "weeklyProgramming": {
+        "lun": {
+          "idDay": "lun",
+          "dayName": "Lunedì",
+          "dayShortName": "Lun",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        },
+        "mar": {
+          "idDay": "mar",
+          "dayName": "Martedì",
+          "dayShortName": "Mar",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        },
+        "mer": {
+          "idDay": "mer",
+          "dayName": "Mercoledì",
+          "dayShortName": "Mer",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 13,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 14,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 15,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 16,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 17,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 18,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 19,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 20,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 21,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 22,
+              "workMode": "eco",
+              "setPoint": 18
+            },
+            {
+              "hour": 23,
+              "workMode": "eco",
+              "setPoint": 18
+            }
+          ]
+        },
+        "gio": {
+          "idDay": "gio",
+          "dayName": "Giovedì",
+          "dayShortName": "Gio",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        },
+        "ven": {
+          "idDay": "ven",
+          "dayName": "Venerdì",
+          "dayShortName": "Ven",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        },
+        "sab": {
+          "idDay": "sab",
+          "dayName": "Sabato",
+          "dayShortName": "Sab",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        },
+        "dom": {
+          "idDay": "dom",
+          "dayName": "Domentica",
+          "dayShortName": "Dom",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 6
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 6
+            }
+          ]
+        }
+      },
+      "devicesAssigned": []
+    },
+    "ciao": {
+      "idZone": "ciao",
+      "zoneName": "ciao",
+      "workMode": {
+        "exit": 11,
+        "eco": 20,
+        "comfort": 24
+      },
+      "weeklyProgramming": {
+        "lun": {
+          "idDay": "lun",
+          "dayName": "Lunedì",
+          "dayShortName": "Lun",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "mar": {
+          "idDay": "mar",
+          "dayName": "Martedì",
+          "dayShortName": "Mar",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "mer": {
+          "idDay": "mer",
+          "dayName": "Mercoledì",
+          "dayShortName": "Mer",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "gio": {
+          "idDay": "gio",
+          "dayName": "Giovedì",
+          "dayShortName": "Gio",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "ven": {
+          "idDay": "ven",
+          "dayName": "Venerdì",
+          "dayShortName": "Ven",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 7,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 8,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 9,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 10,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 11,
+              "workMode": "comfort",
+              "setPoint": 24
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "sab": {
+          "idDay": "sab",
+          "dayName": "Sabato",
+          "dayShortName": "Sab",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        },
+        "dom": {
+          "idDay": "dom",
+          "dayName": "Domentica",
+          "dayShortName": "Dom",
+          "schedule": [
+            {
+              "hour": 0,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 1,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 2,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 3,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 4,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 5,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 6,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 7,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 8,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 9,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 10,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 11,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 12,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 13,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 14,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 15,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 16,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 17,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 18,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 19,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 20,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 21,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 22,
+              "workMode": "exit",
+              "setPoint": 11
+            },
+            {
+              "hour": 23,
+              "workMode": "exit",
+              "setPoint": 11
+            }
+          ]
+        }
+      },
+      "devicesAssigned": []
+    }
+  }
+}

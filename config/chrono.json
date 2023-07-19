@@ -1,0 +1,75 @@
+{
+  "userConfigFile":{
+    "pathDir": "./config",
+    "fileName": "userChronoConfig.json",
+    "template":{
+      "deviceRegistry":{},
+      "zone":{}
+    }
+  },
+  "workMode":{
+    "exit":{
+      "id": "exit",
+      "label": "Exit",
+      "defaultValue": 6,
+      "color": "#00A8F4",
+      "min": 0,
+      "max": 30
+    },
+    "eco":{
+      "id": "eco",
+      "label": "Eco",
+      "defaultValue": 18,
+      "color": "#02B341",
+      "min": 0,
+      "max": 30
+    },
+    "comfort":{
+      "id": "comfort",
+      "label": "Comfort",
+      "defaultValue": 24,
+      "color": "#FFA601",
+      "min": 0,
+      "max": 30 
+    }
+  },
+  "defaultWorkMode": "exit",
+  "days":{
+    "lun":{
+      "id":"lun",
+      "name": "Lunedì",
+      "shortName": "Lun"
+    },
+    "mar":{
+      "id":"mar",
+      "name": "Martedì",
+      "shortName": "Mar"
+    },
+    "mer":{
+      "id":"mer",
+      "name": "Mercoledì",
+      "shortName": "Mer"
+    },
+    "gio":{
+      "id":"gio",
+      "name": "Giovedì",
+      "shortName": "Gio"
+    },
+    "ven":{
+      "id":"ven",
+      "name": "Venerdì",
+      "shortName": "Ven"
+    },
+    "sab":{
+      "id":"sab",
+      "name": "Sabato",
+      "shortName": "Sab"
+    },
+    "dom":{
+      "id":"dom",
+      "name": "Domentica",
+      "shortName": "Dom"
+    }
+  },
+  "hours":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+}
