@@ -1,246 +1,142 @@
-var express = require('express');
-const fetch = require('node-fetch');
-const axios = require('axios');
-const cors = require('cors');
+var express = require("express");
+const cors = require("cors");
 var bodyParser = require("body-parser");
+const fetch = require("node-fetch");
+var W3CWebSocket = require("websocket").w3cwebsocket;
 
 var app = express();
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.json());
 
-var fs = require("fs");
+console.log("INIZIALIZZATO");
 
-const TOKEN = process.env.SUPERVISOR_TOKEN
+app.get("/config", function (req, res) {
+  console.log("QUESTE SONO LE MIE INFORMAZIONI ");
+  res.end("CONFIGURAZIONE DEVICE:{}");
+});
 
-/**
- * Read conf from json file
- *
- */
-app.get('/config', function (req, res) {
-  console.log('Reading configuration...')
-  console.log('token', TOKEN)
-  fs.readFile( __dirname + "/" + "appConfig.json", 'utf8', function (err, data) {
-    if (err) {
-      //throw err;
-      console.log(err)
-    } else{
-      console.log('fs.readFile ok!')
-    }
-    //console.log( data );
-    res.end( data );
+app.get("/time", function (req, res) {
+  webSocket().then((ris) => {
+    console.log("hola", ris);
+    res.end(ris);
   });
-})
+});
 
-/**
- * Save conf on json file
- *
- */
-app.post('/config', function (req, res) {
+app.post("/config", function (req, res) {
   // Request content
-  const data = JSON.stringify(req.body)  
-  //console.log(req.body);
-  console.log('Writing conf file...')
-  fs.writeFile( __dirname + "/" + "appConfig.json", data, (err) => {
-    if (err) throw err;
-    console.log('fs.writeFile ok!');
-    res.end( data );
-  });
-})
+  const data = JSON.stringify(req.body);
+  console.log("INFO DATA ", data);
+  res.end("GRAZIE");
+});
 
-app.get('/ha/states', async function (request, response) {
+const mac_samir_config = {
+  host: "homeassistant.local:9000",
+  token:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5Y2I1MjYwZDAwOWU0MmIxODcxYzE5YjZiNzkzNjcxMyIsImlhdCI6MTY4NDkzMTgzMywiZXhwIjoyMDAwMjkxODMzfQ.XAAQwiK2jVBUikJQlaDTmn-yx8G9FwPufAs1bdkT2pk",
+};
+
+const hub_strutture = {
+  host: "192.168.6.10:8123",
+  token:
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkMGI2YTg1ODkxNmU0MDc2YTM3NjVmMjI0NTcwZmRmMiIsImlhdCI6MTY4NDkzMDkzNiwiZXhwIjoyMDAwMjkwOTM2fQ.NgXw-whDeEmSnKHFd7ALmPdQFtutzDLOVAbbfmRIqHE",
+};
+const CONFIG = hub_strutture;
+app.get("/ha/states", async function (request, response) {
   try {
-    const res = await fetch('http://supervisor/core/api/states',
-      {
-        method: 'GET',
-        headers: {
-          //'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer '+TOKEN
-        },
-      });
-    const headerDate = res.headers && res.headers.get('date') ? res.headers.get('date') : 'no response date';
-    console.log('Status Code:', res.status);
-    console.log('Date in Response header:', headerDate);
+    const res = await fetch(`http://${CONFIG.host}/api/states`, {
+      method: "GET",
+      headers: {
+        //'Accept': 'application/json',
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + CONFIG.token,
+      },
+    });
 
     const data = await res.json();
-    /*for(d of data) {
-      console.log(d);
-    }*/
-    //console.log(data)
-    response.end(JSON.stringify(data))
+    response.end(JSON.stringify(data));
   } catch (err) {
     console.log(err.message); //can be console.error
   }
-})
+});
+app.get("/ha/config", async function (request, response) {
+  try {
+    //const res = await fetch(`${CONFIG.host}/api/hassio/addons`,
+    const res = await fetch(`${CONFIG.host}/api/hassio/services`, {
+      method: "GET",
+      headers: {
+        //'Accept': 'application/json',
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + CONFIG.token,
+      },
+    });
+    console.log("res", res);
 
-//TO REMOVE
-app.get('/ha/states2', async function (req, res) {
-  console.log('sono in api/states')
-  const url = 'http://supervisor/core/api/states'//'http://supervisor/core/api/config'
-  var request = require('request');
-  var options = {
-    'method': 'GET',
-    'url': url, //'http://localhost:7123/api/states', //'http://localhost:7123/api/states'
-    'headers': {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+TOKEN
-    }
-  };
-  request(options, function (error, response) {
-    if (error) {
-      //throw new Error(error);
-      console.log(error)
-    } else {
-      console.log(response.body);
-    }
-  });
+    const data = await res.json();
+    response.end(JSON.stringify(data));
+  } catch (err) {
+    console.log(err.message); //can be console.error
+  }
+});
 
-})
+var server = app.listen(9081, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("Apiserver listening at http://%s:%s", host, port);
+  webSocket();
+  //K console.log(__dirname)
+});
 
-/**
- *
- * @param {*} sensors Sensors list to call
- * @param {*} temperature Temperature to set on the sensors
- */
- app.post('/setTemperature', async function (req, res) {
-    //const data = JSON.stringify(req.body)
-    const data = req.body
-    let sensors = data.sensors
-    let temperature = data.temperature
-    let token = data.token
-    
-    console.log('/setTemperature:', data, sensors)
+console.log("fine");
 
-    /*
-    const url = 'http://supervisor/core/api/services/climate/set_temperature'
-
-    if (sensors && sensors.length > 0) {
-      const returnPool = await Promise.all(
-        sensors.map(async (sensor) => {
-          const data = {"entity_id": sensor, "temperature": temperature}
-          const response = await fetch(url, {
-            headers: {
-              'Authorization': 'Bearer '+ TOKEN,
-              //'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            method: 'POST',
-            body: JSON.stringify(data)
-          });
-          return await response.json();
+const webSocket = () => {
+  return new Promise((resolve, reject) => {
+    const socket = new W3CWebSocket(`ws://${CONFIG.host}/api/websocket`);
+    console.log("APRO WEB SOCKET");
+    socket.onopen = function (event) {
+      console.log("MANDO AUTENTICAZIONE");
+      socket.send(
+        JSON.stringify({
+          type: "auth",
+          access_token: CONFIG.token,
         })
       );
-      console.log(returnPool);
-    }*/
-    await callSetTemperature(sensors, temperature)
+      console.log("SONO QUI");
+    };
+    // UTILI
+    //https://community.home-assistant.io/t/how-to-get-list-of-areas-through-websocket-api-or-hass-object/426485/2
 
-    res.end(JSON.stringify({msg: 'ok'}))
-    console.log(req.body);
-})
+    //https://developers.home-assistant.io/docs/frontend/custom-ui/custom-strategy/#full-example
 
-/**
- * Execute server
- */
-var server = app.listen(9081, function () {
-   var host = server.address().address
-   var port = server.address().port
-   console.log("Apiserver listening at http://%s:%s", host, port)
-   console.log(__dirname)
-})
+    //socket.send(JSON.stringify({ type: 'config/area_registry/list', id: 4 }))
 
-async function callSetTemperature(sensors, temperature){
-  const url = 'http://supervisor/core/api/services/climate/set_temperature'
+    //socket.send(JSON.stringify({ type: 'config/device_registry/list', id: 3 }))
 
-  if (sensors && sensors.length > 0) {
-    const returnPool = await Promise.all(
-      sensors.map(async (sensor) => {
-        const data = {"entity_id": sensor, "temperature": temperature}
-        const response = await fetch(url, {
-          headers: {
-            'Authorization': 'Bearer '+ TOKEN,
-            //'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          method: 'POST',
-          body: JSON.stringify(data)
-        }).catch((err) => {console.log('ERROR:', err.message)});
-        let ret = {}
-        if(response) {
-          //return await response.json();
-          try {
-            ret = await response.json();
-          } catch(err) {
-            ret = {}
-          }          
+    socket.onmessage = function (e) {
+      if (typeof e.data === "string") {
+        //console.log("Received: '" + e.data + "'");
+        console.log(JSON.parse(e.data).id);
+        if (JSON.parse(e.data).type === "auth_ok") {
+          console.log("SONO AUTENTICATO");
+          socket.send(
+            JSON.stringify(
+              { type: "config/entity_registry/list", id: 3 },
+              null,
+              2
+            )
+          );
         }
-        return ret
-      })
-    );
-    console.log(returnPool);
-  }
-}
-
-function processData(data) {
-  //Foreach zones: 
-  // - read sensors
-  // - read temperature
-  //Foreach sensors:
-  // - Set temperature  
-
-  //console.log(data.zones)
-
-  const daysOfWeek = {
-    0: 'dom',
-    1: 'lun',
-    2: 'mar',
-    3: 'mer',
-    4: 'gio',
-    5: 'ven',
-    6: 'sab'
-  }
-
-  const now = new Date()
-  const d = daysOfWeek[now.getDay()]
-  const h = ''+now.getHours() 
-  const m = now.getMinutes() > 29 ? '30' : '00'
-  const hhmm = (h.length === 1 ? '0' : '') + h + ':' + m
-  console.log('Current time:', now)
-  console.log('Current time:', hhmm)
-
-  let sensors = []
-
-  for (const zone of data.zones) {
-    console.log('zone', zone.label)
-    for (const sensor of zone.climateSensors) {
-      sensors.push(sensor)
-    }
-
-    callSetTemperature(sensors, zone.setpointDefault[zone.weekSetpointTimeslice[d][hhmm]].value)
-  }
-}
-
-var CronJob = require('cron').CronJob;
-var job = new CronJob('* */30 * * * *', function() {
-    console.log('Here I am, each 30 minutes!')
-
-    fs.readFile( __dirname + "/" + "appConfig.json", 'utf8', function (err, data) {
-      if (err) {
-        //throw err;
-        console.log(err)
-      } else{
-        console.log('Conf ok!')
-        //console.log(data)
+        if (JSON.parse(e.data).id === 3) {
+          socket.close();
+          resolve(e.data);
+        }
       }
-      //console.log( data );
-      processData( JSON.parse(data) );
-    });
+    };
 
-    
+    socket.onclose = function (e){
+      console.log("WEBSOCKET CLOSE ", e)
+    }
+  });
+};
 
-  }, function () {
-    /* This function is executed when the job stops */
-    console.log('The End!')
-  },
-  true, /* Start the job right now */
-  'Europe/Rome' /* Time zone of this job. */ //Potrei prenderlo dalla conf!
-);
+// after you get the auth_ok message, send this websocket:
+/*  */
