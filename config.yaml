@@ -1,6 +1,6 @@
-name: "Cronotermostato v2"
+name: "Cronotermostato"
 description: "Add-on per fornitura funzionalità cronotermostato"
-version: "1.0.9"
+version: "1.0.19"
 slug: "cronotermostato_test"
 init: false
 arch:
@@ -9,8 +9,33 @@ arch:
   - armhf
   - armv7
   - i386
-ports:
-  9081/tcp: 9081
 homeassistant_api: true
 hassio_role: admin
 hassio_api: true
+
+ingress: true
+ingress_port: 9081
+ingress_entry: "web"
+ingress_stream: true
+
+panel_icon: mdi:microsoft-visual-studio-code
+startup: services
+
+init: false
+uart: true
+
+
+webui: "[PROTO:http]://[HOST]:[PORT:9081]/web"
+
+
+
+options:
+  packages: []
+  init_commands: []
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  config_path: str?
+  packages:
+    - str
+  init_commands:
+    - str
