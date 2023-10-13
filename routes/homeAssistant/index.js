@@ -15,7 +15,7 @@ const mac_samir_config = {
 const hub_strutture = {
   host: "192.168.6.10:8123",
   token:
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkMGI2YTg1ODkxNmU0MDc2YTM3NjVmMjI0NTcwZmRmMiIsImlhdCI6MTY4NDkzMDkzNiwiZXhwIjoyMDAwMjkwOTM2fQ.NgXw-whDeEmSnKHFd7ALmPdQFtutzDLOVAbbfmRIqHE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI3ODgxOTI5NjcwMGU0YjA5YmIzZmQ5NjA0ZDJlZmEzOCIsImlhdCI6MTY5Njg0NDQ4MSwiZXhwIjoyMDEyMjA0NDgxfQ.yklAUap5z-XY5PyfLyfFwUs1JR2XoIGZrBrIi70InK8",
 };
 const CONFIG = hub_strutture;
 

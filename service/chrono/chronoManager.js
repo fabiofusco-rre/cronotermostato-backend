@@ -23,6 +23,11 @@ exports.getUserChronoConfig = async () => {
       await ConfigService.createUserChronoFile();
       await this.createNewZone('demo');
     }
+    /**
+     * ATTENZIONE:
+     * Il commento è momentanero, in quanto l'update dei
+     * device sta risultato lento per domotica-se
+     */
     //await this.updateDeviceRegistry();
     return await ConfigService.getUserChronoFile();
   } catch (error) {

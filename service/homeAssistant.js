@@ -11,7 +11,7 @@ const mac_samir_config = {
 const hub_strutture = {
   host: "192.168.6.10:8123",
   token:
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkMGI2YTg1ODkxNmU0MDc2YTM3NjVmMjI0NTcwZmRmMiIsImlhdCI6MTY4NDkzMDkzNiwiZXhwIjoyMDAwMjkwOTM2fQ.NgXw-whDeEmSnKHFd7ALmPdQFtutzDLOVAbbfmRIqHE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI3ODgxOTI5NjcwMGU0YjA5YmIzZmQ5NjA0ZDJlZmEzOCIsImlhdCI6MTY5Njg0NDQ4MSwiZXhwIjoyMDEyMjA0NDgxfQ.yklAUap5z-XY5PyfLyfFwUs1JR2XoIGZrBrIi70InK8",
 };
 
 const hub_casetta = {
@@ -19,7 +19,7 @@ const hub_casetta = {
   token:
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkNWEyYmJkZTA2NWM0NWJlOTkxMzBmMmUzNDlmYzk2YiIsImlhdCI6MTY4NjE1MzU0OCwiZXhwIjoyMDAxNTEzNTQ4fQ.82dOyq7d9_Ojuqeq1kAw5d9q3rVV-fF8KzmF0bC6aXg"
 }
-let CONFIG = hub_casetta;
+let CONFIG = hub_strutture;
 /* CONFIG.host = "http://supervisor/core" */
 /* CONFIG.token = process.env.SUPERVISOR_TOKEN ? process.env.SUPERVISOR_TOKEN : CONFIG.token */
 

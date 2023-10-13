@@ -18,7 +18,7 @@ require("./routes");
 var CronJob = require("cron").CronJob;
 try {
   var job = new CronJob(
-    "*/5 * * * * *",
+    "*/10 * * * * *",
     function () {
       //console.log("Here I am, every 10 seconds!");
 
@@ -28,7 +28,7 @@ try {
       /* This function is executed when the job stops */
       console.log("The End!");
     },
-    false /* Start the job right now */,
+    true /* Start the job right now */,
     "Europe/Rome" /* Time zone of this job. */ //Potrei prenderlo dalla conf!
   );
 } catch (error) {
